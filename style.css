@@ -23,11 +23,45 @@
     background-color: #fff;
     color: #ffacb7;
   }
-  @media screen and (min-width: 992px) {
-    .navbar {
-      padding: 0;
-    }
+
+  /* for slider  */
+    /* Custom styles for the slider */
+    .testimonial-slider {
+      position: relative;
+      overflow: hidden;
   }
+
+  .slider-title {
+      text-align: center;
+      padding: 15px;
+      background-color: #f8f9fa;
+  }
+
+  .testimonial-content {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .testimonial {
+      width: 100%;
+  }
+
+  .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 24px;
+  }
+
+  .arrow-left {
+      left: 10px;
+  }
+
+  .arrow-right {
+      right: 10px;
+  }
+
   
   .navbar .navbar-nav .nav-link {
     padding: 1em;
@@ -38,6 +72,11 @@
   .navbar-brand {
     font-size: 1.5em;
   }
+  @media screen and (min-width: 992px) {
+    .navbar {
+      padding: 0;
+    }
+  }
   @media screen and (max-width: 991px) {
     .navbar-brand {
       padding-left: 0.7em;
@@ -46,4 +85,3 @@
       padding-top: 0.5em;
     }
   }
-  
