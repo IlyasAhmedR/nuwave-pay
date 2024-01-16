@@ -14,67 +14,227 @@
   .color-light-blue{
     color: var(--color-light-blue);
   }
-
-.hero-section {
-    background: linear-gradient(180deg, #E1E4FF 33.66%, rgba(225, 228, 255, 0.00) 100%);
+.custom-btn button{
+  border-radius: 32px;
+background: linear-gradient(100deg, #6C89F6 0%, #80FBEC 100%);
+font-family: 'DM Sans', sans-serif;
+color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+letter-spacing: 0.32px;
+padding: 0.7rem 1.6rem;
+border: 0;
+}
+.custom-btn button:hover{    background: linear-gradient(100deg, #80FBEC 0%, #6C89F6 100%);
+  color: #fff;
 }
 
+.img{
+  max-width: 100%;
+}
+.hero-section {
+    background: linear-gradient(180deg, #E1E4FF 33.66%, rgb(225 228 255 / 17%) 100%)
+}
+.nav-bar{
+  position: relative;
+  z-index: 1;
+}
+.title{
+  font-family: 'Epilogue', sans-serif;
+}
 .navbar .navbar-nav .nav-link:hover {
-    background-color: #fff;
-    color: #ffacb7;
+    color: var(--color-light-blue);
   }
-
-  /* for slider  */
-    /* Custom styles for the slider */
-    .testimonial-slider {
-      position: relative;
-      overflow: hidden;
-  }
-
-  .slider-title {
-      text-align: center;
-      padding: 15px;
-      background-color: #f8f9fa;
-  }
-
-  .testimonial-content {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-  }
-
-  .testimonial {
-      width: 100%;
-  }
-
-  .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      cursor: pointer;
-      font-size: 24px;
-  }
-
-  .arrow-left {
-      left: 10px;
-  }
-
-  .arrow-right {
-      right: 10px;
-  }
-
-  
+   
   .navbar .navbar-nav .nav-link {
     padding: 1em;
     transition: all 0.5s;
-    color: #fff;
+    color: #000;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.32px;
     font-size: 1.1em;
+font-family: 'DM Sans', sans-serif;
+
   }
   .navbar-brand {
     font-size: 1.5em;
   }
+  .navbar-brand img{
+   width: 80%;
+  }
+  /* for slider  */
+  .testimonial-slider {
+    background-color: #5072a7;
+    padding: 2em 2em 3em;
+  }
+  .testimonial-title {
+    color: #fff;
+  }
+  .testimonial-title h2 {
+    padding-left: 0.2em;
+  }
+  testimonial-slider  .card {
+    margin: 0 0.5em;
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+    border: none;
+    height: 100%;
+  }
+  .carousel-control-prev,
+  .carousel-control-next {
+    background-color: #fff;
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    top: 60%;
+    transform: translateY(-50%);
+  }
+  
+  @media (min-width: 576px) {
+    .carousel-item {
+      margin-right: 0;
+      flex: 0 0 50%;
+      display: block;
+    }
+    .carousel-inner {
+      display: flex;
+    }
+  }
+  @media (min-width: 768px) {
+    .carousel-inner {
+      padding: 1em;
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      opacity: 1;
+      position: absolute;
+      left: 1em;
+      top: 90%;
+      transform: translateY(-50%);
+    }
+    .carousel-control-next {
+      left: 5em;
+    }
+  }
+
+  /* hero section  */
+  .bg-img::before{
+    background: url(./images/hero-sec-lines.png);
+    position: absolute;
+    top: 0;
+    content: '';
+    height: 100%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    right: 0;
+    z-index: 0;
+  }
+  .hero-section .right-side{
+    z-index: 1;
+    position: relative;
+  }
+  .hero-section .left-side{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero-section .bg-img {
+    padding: 4rem 1rem 5rem;
+}
+.left-side h1{
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: normal;
+}
+.left-side h1 span{
+font-style: italic;
+color: var(--color-purple);
+}
+.left-side h4{
+  font-weight: 800;
+  padding: 1.5rem 0 2rem;
+}
+.left-side .custom-btn button {
+  display: flex;
+  min-width: 240px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.million-month-section{
+  background: #FFF;
+    padding: 3rem 0;
+}
+.million-month-section h2{
+  color: #000;
+  text-align: center;
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  padding-bottom: 2rem;
+}
+.million-month-section .card{
+  border: 0;
+  display: flex;
+  max-width: 375px;
+  transition: .3s linear;
+
+}
+.million-month-section .card:hover{
+  box-shadow: 4px 8px 113px 0px rgba(0, 0, 0, 0.09);
+  transform: scale(1.1);
+  transition: .3s linear;
+}
+.million-month-section .card-descp{
+  border-radius: 20px;
+  background: var(--Shades-White, #FAFAFA);
+  box-shadow: 44px 38px 113px 0px rgba(0, 0, 0, 0.09);
+  padding: 3rem 2.2rem;
+  min-height: 230px;
+
+}
+.million-month-section .card-title {color: #000;
+  text-align: center;
+  font-size: 1.2rem;
+  font-style: normal;}
+  .million-month-section .card-text {
+    color: #000;
+    text-align: center;
+    font-family: DM Sans;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.3;
+}
+.million-month-section .card-img {
+  text-align: center;
+  position: relative;
+  bottom: -40px;
+  min-height: 170px;
+}
+/* partners section  */
+.partners-parent {
+  text-align: center;
+  padding: 2rem 0 5rem;
+}
+/* calculation- section  */
+.calculation-parent{
+  border-radius: 35px;
+  background: #6C89F6;
+}
+.calculation-div {
+  width: 60%;
+  margin: 0 auto;
+  padding: 3rem 0;
+}
+  /* media starts  */
+  
   @media screen and (min-width: 992px) {
     .navbar {
-      padding: 0;
+      padding-top: 1rem;
     }
   }
   @media screen and (max-width: 991px) {
