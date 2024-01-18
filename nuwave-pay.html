@@ -34,16 +34,16 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                     <li class="nav-item">
-                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Services</a>
+                                        <a class="nav-link" aria-current="page" href="#service">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                                        <a class="nav-link" aria-current="page" href="#price">Pricing</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" aria-current="page" href="#">About Us</a>
+                                        <a class="nav-link" aria-current="page" href="#aboutus">About Us</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link">Contact</a>
@@ -57,7 +57,7 @@
                     </nav>
                 </div>
                 <div class="container bg-img">
-                <div class="row">
+                <div class="row" id="home">
                     <div class="col-sm-6">
                         <div class="left-side">
                             <div class="title">
@@ -81,7 +81,7 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="right-side">
-                            <img src="./images/imac 1.png" alt="" class="img">
+                            <img src="./images/hero-sec-img.png" alt="" class="img">
                         </div>
                     </div>
                 </div>
@@ -91,7 +91,7 @@
 
         </section>
         <!-- hero-section -->
-        <section class="million-month-section">
+        <section class="million-month-section" id="service">
             <div class="container">
                 <div class="title">
                     <h2>Doesn’t matter if you process <span class="color-purple fst-italic"> $10,000 or $10 </span> million per month.</h2>
@@ -156,7 +156,7 @@
                     <!-- col-sm-4 -->
                 </div>
             </div>
-        </section>
+        </section> 
         <!-- "million-month-section -->
         <section class="partners-section">
             <div class="partners-parent">
@@ -166,14 +166,14 @@
         </div>
         </section>
         <!-- partners-section -->
-        <section class="calculation-section">
+        <section class="calculation-section" id="price">
             <div class="container">
             <div class="calculation-parent">
                 <div class="calculation-div">
                     <div class="title">
                         <h3>How much could you save?</h3>
                     </div>
-                    <div class="row">
+                    <div class="row margin_top_38">
                         <div class="col-sm-8">
                             <div class="choose-qnty">
                                 <div class="title">
@@ -182,26 +182,29 @@
                                     </h5>
                                 </div>
                                 <form id="expenseForm">
-                                    <div class="form-row align-items-center">
-                                        <div class="col-auto">
+                                    <div class="form-row align-items-center d-flex">
+                                        <div class="col-auto cal_inputs">
                                             <label for="number1" class="sr-only">monthly credit card sales.</label>
-                                            <input type="number" class="form-control" id="number1" placeholder="$ 0" required>
+                                            <input type="number" class="form-control" id="number1" placeholder="0" required>
+                                            <span>$</span>
                                         </div>
-                                        <div class="col-auto">
+                                        <div class="col-auto ms-3 margin-left-0 cal_inputs">
                                             <label for="number2" class="sr-only">monthly credit card fees.</label>
-                                            <input type="number" class="form-control" id="number2" placeholder="$ 0" required>
+                                            <input type="number" class="form-control" id="number2"  placeholder="0" required>
+                                            <span>$</span>
                                         </div>
-                                        <div class="col-auto">
-                                            <button type="button" onclick="calculateRate()" class="btn btn-primary">calculate my rate
-                                            </button>
-                                        </div>
+                                       
+                                    </div>
+                                    <div class="col-auto calculate-btn">
+                                        <button type="button" onclick="calculateRate()" class="btn btn-primary">calculate my rate
+                                        </button>
                                     </div>
                                 </form>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="choosen-result">
-                                <ul>
+                                <ul class="ps-0">
                                     <li>
                                         <span class="left">
                                             Your rate is:
@@ -250,7 +253,7 @@
                 <h3>Want to continue paying processing fees at a lower rate? We’ve got you covered, a traditional rate
                     reduction is at your fingertips. Simply upload your last statement here.</h3>
             </div>
-            <div class="custom-btn">
+            <div class="custom-btn d-flex justify-content-center">
                 <button class="learn-more-btn">
                     Learn more
                 </button>
@@ -277,7 +280,7 @@
                 <!-- box -->
                 <div class="box ">
                     <div class="box-icon">
-                        <img src="./images/icon-retail.svg" alt="">
+                        <img src="./images/cart.png" alt="">
                     </div>
                     <div class="box-title">
                         <h6>Ecommerce </h6>
@@ -309,13 +312,14 @@
         <section class="testimonial-slider-section">
             <div class="testimonial-slider">
                 <div id="carouselExampleControls" class="carousel carousel-dark">
-                    <div class="container-fluid">
+                    <div class="container">
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="testimonial-title">
                                     <i class="bi bi-quote display-1"></i>
-                                    <h2 class="fw-bold display-6">What our customers say</h2>
+                                    <h2 class="fw-bold display-6">We love our members!</h2>
                                 </div>
+                                <div class="slider-btns">
                                 <button class="carousel-control-prev" type="button"
                                     data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -327,95 +331,34 @@
                                     <span class="visually-hidden">Next</span>
                                 </button>
                             </div>
+                            </div>
                             <div class="col-md-8">
                                 <div class="carousel-inner">
                                     <div class="carousel-item active">
                                         <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-1-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 1</h5>
-                                                <i class="bi bi-star-fill text-warning pe-1"></i>
-                                                <i class="bi bi-star-fill text-warning pe-1"></i>
-                                                <i class="bi bi-star-fill text-warning pe-1"></i>
-                                                <i class="bi bi-star-fill text-warning pe-1"></i>
-                                                <i class="bi bi-star-fill text-warning pe-1"></i>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
+                                            <p class="qoute-icon color-purple"><i class="bi bi-quote"></i></p>
+                                           <p>   Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe. Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-2-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 2</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
+                                            <p class="qoute-icon color-purple"><i class="bi bi-quote"></i></p>
+
+                                           <p>01 Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe. Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-3-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 3</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
+                                            <p class="qoute-icon color-purple"><i class="bi bi-quote"></i></p>
+
+                                           <p>02 Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe. Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
                                         <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-4-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 4</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-5-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 5</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="card">
-                                            <div class="img-wrapper"><img
-                                                    src="https://codingyaar.com/wp-content/uploads/headshot-6-scaled.jpg"
-                                                    class="d-block w-100" alt="..."> </div>
-                                            <div class="card-body">
-                                                <h5 class="card-title">Card title 6</h5>
-                                                <p class="card-text">Some quick example text to build on the card title
-                                                    and make up
-                                                    the bulk of the
-                                                    card's content.</p>
-                                            </div>
+                                            <p class="qoute-icon color-purple"><i class="bi bi-quote"></i></p>
+
+                                           <p>03 Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe. Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.Upay transactions are protected by the latest encryption and security technology. We also leverage Plaid to keep businesses in our database safe.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -424,15 +367,10 @@
                     </div>
                 </div>
             </div>
-
-            <p class="mt-2 text-center">Get a step-by-step written explanation here: <a
-                    href="https://codingyaar.com/bootstrap-5-testimonial-slider" target="_blank">Bootstrap 5 Testimonial
-                    Carousel Slider</a> </p>
-
-            <p class="mt-2 text-center">Get a step-by-step video explanation here: <a
-                    href="https://youtu.be/caNQ-1RTef4" target="_blank">Bootstrap 5 Testimonial Carousel Slider</a> </p>
         </section>
-        <section class="join-nauwave-section">
+
+
+        <section class="join-nauwave-section mt-5" id="aboutus">
             <div class="join-parent">
                 <div class="container">
                 <div class="title">
@@ -442,11 +380,13 @@
                     </h2>
                 </div>
                 <div class="buttons">
-                    <div class="custom-btn">
-                        <button>Get started</button>
+                    <div class="custom-btn col-auto">
+                        <button  class="learn-more-btn">Get started</button>
                     </div>
-                    <div class="custom-btn">
-                        <button>Call Us</button>
+                    <div class="custom-btn col-auto">
+                        <button class="learn-more-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="20" height="25" viewBox="0 0 25 28" fill="none">
+                            <path d="M20.0246 17.5816L17.4436 17.2484C17.1401 17.2081 16.8325 17.2461 16.5439 17.3595C16.2553 17.4729 15.9931 17.6588 15.7772 17.9032L13.9075 20.0168C11.0229 18.3583 8.67827 15.7078 7.21121 12.4468L9.09105 10.3217C9.52798 9.82772 9.74137 9.13849 9.67024 8.43777L9.37556 5.543C9.31795 4.98263 9.08006 4.46577 8.70719 4.09084C8.33431 3.71591 7.85249 3.5091 7.35347 3.50977H5.59556C4.44734 3.50977 3.49217 4.58956 3.5633 5.88761C4.10185 15.6977 11.042 23.5319 19.7096 24.1407C20.8578 24.2212 21.813 23.1414 21.813 21.8433V19.856C21.8231 18.6958 21.0509 17.7194 20.0246 17.5816Z" fill="#6C89F6"/>
+                            </svg> <span class="ms-2"> Call Us</span></button>
                     </div>
                 </div>
             </div>
@@ -456,7 +396,7 @@
         <footer>
             <section class="footer-section">
                 <div class="container">
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-sm-4">
                             <div class="footer-logo">
                                 <img src="./images/logo.png" alt="">
@@ -469,7 +409,7 @@
                                 </p>
                             </div>
                             <div class="footer-social-links">
-                                <ul>
+                                <ul class="d-flex ps-0">
                                     <li class="icon-insta">
                                         <i class="bi bi-instagram"></i>
                                     </li>
@@ -487,13 +427,13 @@
                         </div>
                         <!-- col sm 4 -->
                         <div class="col-sm-4">
-                            <div class="footer-quick-links">
+                            <div class="footer-quick-links footer-sub-title">
                                 <div class="title">
                                     <h6>
                                         Jump To
                                     </h6>
                                 </div>
-                                <ul>
+                                <ul class="ps-0">
                                     <li>
                                         <a href="#.">
                                             Home
@@ -524,13 +464,13 @@
                         </div>
                         <!-- col sm 4 -->
                         <div class="col-sm-4">
-                            <div class="footer-legal-links">
+                            <div class="footer-legal-links footer-sub-title">
                                 <div class="title">
                                     <h6>
                                         Legal
                                     </h6>
                                 </div>
-                                <ul>
+                                <ul class="ps-0">
                                     <li>
                                         <a href="#.">Terms of Use</a>
                                     </li>
@@ -538,84 +478,58 @@
                                         <a href="#.">Privacy Policy</a>
                                     </li>
                                     <li>
-                                        Privacy Policy
+                                        Get the app
                                     </li>
                                     <li class="get-app-icons">
                                         <span>
-                                            <i class="bi bi-google-play"></i>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 32 33" fill="none">
+                                                <g clip-path="url(#clip0_305_100)">
+                                                <path d="M28.77 13.9158L6.17529 0.870605C5.25171 0.337402 4.14893 0.337402 3.2251 0.870605C3.21753 0.875 3.21069 0.879883 3.20312 0.884277C3.18994 0.89209 3.17676 0.900146 3.16382 0.908691C2.27783 1.44849 1.75 2.3833 1.75 3.42554V29.5159C1.75 30.5825 2.30151 31.5376 3.2251 32.0708C3.68701 32.3374 4.1936 32.4707 4.7002 32.4707C5.20679 32.4707 5.71362 32.3374 6.17529 32.0708L28.7703 19.0256C29.6938 18.4924 30.2454 17.5374 30.2454 16.4707C30.2454 15.4041 29.6938 14.449 28.77 13.9158ZM3.64868 29.7378C3.63501 29.6692 3.62671 29.5957 3.62671 29.5159V3.42554C3.62671 3.28516 3.65039 3.16284 3.68823 3.0564L16.4585 16.3765L3.64868 29.7378ZM6.3877 3.16016L21.0264 11.6118L17.7585 15.0205L6.3877 3.16016ZM5.98267 30.0151L17.7583 17.7322L21.1428 21.2625L5.98267 30.0151ZM27.8318 17.4004L22.8162 20.2961L19.0583 16.3765L22.6997 12.5781L27.8318 15.541C28.3162 15.8208 28.3687 16.2844 28.3687 16.4707C28.3687 16.657 28.3162 17.1206 27.8318 17.4004Z" fill="#1D191F"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_305_100">
+                                                <rect width="32" height="32" fill="white" transform="translate(0 0.470703)"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
                                         </span>
-                                        <span><i class="bi bi-apple"></i></span>
+                                        <span class="ms-4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="30" viewBox="0 0 32 33" fill="none">
+                                                <g clip-path="url(#clip0_305_102)">
+                                                <path d="M25.4375 0.470703H6.5625C2.94394 0.470703 0 3.41464 0 7.0332V25.9082C0 29.5268 2.94394 32.4707 6.5625 32.4707H25.4375C29.0561 32.4707 32 29.5268 32 25.9082V7.0332C32 3.41464 29.0561 0.470703 25.4375 0.470703ZM30.125 25.9082C30.125 28.4929 28.0222 30.5957 25.4375 30.5957H6.5625C3.97781 30.5957 1.875 28.4929 1.875 25.9082V7.0332C1.875 4.44852 3.97781 2.3457 6.5625 2.3457H25.4375C28.0222 2.3457 30.125 4.44852 30.125 7.0332V25.9082Z" fill="#1D191F"/>
+                                                <path d="M19.1029 8.19099C18.9948 7.78786 18.7363 7.45086 18.3749 7.24224C17.6289 6.81149 16.6714 7.06792 16.2405 7.81417L16 8.23067L15.7595 7.81411C15.3287 7.06805 14.3713 6.81149 13.6251 7.24217H13.6251C12.8789 7.67299 12.6224 8.63042 13.0532 9.37661L14.1958 11.3556L9.97988 18.6578H6.90625C6.04469 18.6578 5.34375 19.3587 5.34375 20.2203C5.34375 21.0819 6.04469 21.7828 6.90625 21.7828H18.7725L16.9683 18.6578H13.5883L18.9468 9.37667C19.1554 9.01524 19.2109 8.59411 19.1029 8.19099Z" fill="#1D191F"/>
+                                                <path d="M25.0937 18.6586H22.0201L18.5259 12.6064L16.7217 15.7314L22.1469 25.1282C22.3556 25.4897 22.6925 25.7483 23.0957 25.8563C23.2304 25.8924 23.3669 25.9103 23.5027 25.9103C23.7734 25.9103 24.0407 25.8393 24.2815 25.7002C25.0276 25.2694 25.2841 24.3119 24.8533 23.5658L23.8242 21.7836H25.0937C25.9552 21.7836 26.6562 21.0826 26.6562 20.2211C26.6562 19.3595 25.9552 18.6586 25.0937 18.6586Z" fill="#1D191F"/>
+                                                <path d="M7.45382 23.0332L7.14651 23.5655C6.71576 24.3116 6.97232 25.2691 7.71844 25.6998C7.96388 25.8415 8.23213 25.9089 8.49707 25.9088C9.03744 25.9088 9.56376 25.6286 9.85288 25.1279L11.0623 23.0332H7.45382Z" fill="#1D191F"/>
+                                                </g>
+                                                <defs>
+                                                <clipPath id="clip0_305_102">
+                                                <rect width="32" height="32" fill="white" transform="translate(0 0.470703)"/>
+                                                </clipPath>
+                                                </defs>
+                                                </svg>
+                                        </span>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                          <!-- col sm 4 -->
                     </div>
-                    <div class="copy-right-section">
-                        <p>
-                            Copyright © Nuwave |  2023
-                        </p>
-                    </div>
+                  
                 </div>
             </section>
+            <div class="copy-right-section">
+                <p>
+                    Copyright © Nuwave |  2023
+                </p>
+            </div>
         </footer>
     </div>
     <!-- page-parent -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- for slider  -->
-    <script>
-        var multipleCardCarousel = document.querySelector("#carouselExampleControls");
-
-        if (window.matchMedia("(min-width: 576px)").matches) {
-            var carousel = new bootstrap.Carousel(multipleCardCarousel, {
-                interval: false
-            });
-            var carouselWidth = $(".carousel-inner")[0].scrollWidth;
-            var cardWidth = $(".carousel-item").width();
-            var scrollPosition = 0;
-            $("#carouselExampleControls .carousel-control-next").on("click", function () {
-                if (scrollPosition < carouselWidth - cardWidth * 3) {
-                    scrollPosition += cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
-                }
-            });
-            $("#carouselExampleControls .carousel-control-prev").on("click", function () {
-                if (scrollPosition > 0) {
-                    scrollPosition -= cardWidth;
-                    $("#carouselExampleControls .carousel-inner").animate(
-                        { scrollLeft: scrollPosition },
-                        600
-                    );
-                }
-            });
-        } else {
-            $(multipleCardCarousel).addClass("slide");
-        }
-
-    </script>
-    <!-- for calculations  -->
-    <script>
-        function calculateRate() {
-            // Get the input values
-            var sales = parseFloat(document.getElementById("number1").value) || 0;
-            var fees = parseFloat(document.getElementById("number2").value) || 0;
-
-            // Perform the calculation
-            var rate = (fees / sales) * 100;
-
-            // Update the result elements
-            document.getElementById("rateResult").innerText = rate.toFixed(1) + "%";
-            document.getElementById("monthlySavings").innerText = "$" + fees.toFixed(2);
-            document.getElementById("yearlySavings").innerText = "$" + (fees * 12).toFixed(2);
-            document.getElementById("fiveYearSavings").innerText = "$" + (fees * 12 * 5).toFixed(2);
-        }
-    </script>
+<script src="./custom.js"></script>
+   
 </body>
 
 </html>
